@@ -1,0 +1,130 @@
+:root {
+    --off-black: hsl(0, 0%, 10%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
+    color: var(--off-black);
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Header & Nav Section  */
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+header nav {
+    position: fixed;
+    width: 50%;
+    height: 3rem;
+    z-index: 2;
+    top: 0;
+    display: inline;
+}
+
+header nav div {
+    display: inline;
+}
+
+header nav div h1 {
+    display: inline;
+    margin: 0;
+    position: relative;
+    top: 1.1rem;
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+
+header nav ul {
+    text-align: right;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 0;
+    padding: 0 .5rem;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: var(--off-black);
+    font-weight: 600;
+}
+
+main {
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 20px;
+    margin-top: 4rem;
+    height: 90vh;
+}
+
+/* About Me Section */
+
+#aboutme {
+    display: flex;
+}
+
+#aboutme .info p {
+    margin-top: 1rem;
+    font-size: 1.1em;
+    line-height: 1.5em;
+    width: 90%;
+}
+
+#aboutme .pfp img {
+    width: 330px;
+    height: 480px;
+    border-radius: 10%;
+    margin-right: 20px;
+}
+
+/* Projects Section */
+
+#projects {
+}
+#projects ul {
+    list-style: '→';
+    padding: 1.2rem;
+}
+
+#projects ul li {
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+/* Skills section */
+
+#skills .languages ul li {
+    display: inline-block;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    padding-right: 2rem;
+}
+
+#skills .languages ul li i {
+    font-size: 2.5rem;
+}
+
+/* Footer Section */
+
+#footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
