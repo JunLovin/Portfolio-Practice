@@ -106,7 +106,7 @@ main {
 
 #projects ul {
     list-style: '→';
-    padding: 1.2rem;
+    padding: 0 1.2rem 1rem 0;
 }
 
 #projects ul li {
@@ -181,4 +181,57 @@ main {
 #info article .links .contactLinks li a:active {
     position: relative;
     top: 1px;
+}
+
+/* Mobile Queries */
+
+@media only screen and (max-width: 480px) {
+    main {
+        width: 90%;
+        margin-top: 2.5rem;
+    }
+    header nav {
+        width: 100%;
+        padding: 0 1rem;
+        text-align: center;
+    }
+    header nav div h1 {
+        top: .7rem;
+        right: .5rem;
+    }
+    header nav div h1 a:hover {
+        text-decoration: none;
+    }
+    header nav ul li {
+        position: relative;
+        bottom: .7rem;
+        right: .5rem;
+    }
+    .nav-hidden {
+        display: none;
+    }
+    #aboutme {
+        display: block;
+    }
+    #aboutme .pfp {
+        text-align: center;
+        margin: 1rem 0;
+    }
+    #aboutme .pfp img {
+        width: 100%;
+    }
+    #projects ul {
+        padding: 0 1rem .5rem 0;
+    }
+    #projects ul li {
+        padding: .5rem 0;
+    }
+    #firstComputerProjectImg, #secondComputerProjectImg, #thirdComputerProjectImg {
+        width: 100% !important;
+    }
+    /* Contact Section Mobile */
+    .aboutMeAnchor {
+        position: relative;
+        left: 4rem;
+    }
 }
